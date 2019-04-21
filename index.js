@@ -7,7 +7,11 @@ const body = document.getElementById('gradient');
 // console.log(color1);console.log(color2);console.log(css)
 let gradient = () => {
     body.style.background = `linear-gradient(to right, ${color1.value}, ${color2.value})`;
+    css.textContent = body.style.background + ";";
+
 }
+
+
 
 color1.addEventListener('input', gradient);
 color2.addEventListener('input', gradient);
